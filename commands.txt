@@ -1,0 +1,16 @@
+1) create repo
+    - mkdir project
+
+2) create venv in repo
+    - python -m venv venv
+
+3)Install all requirements for django
+    - pip install django
+
+4) Create project
+    - django-admin startproject name_project
+
+5) Into the new name_project and create new app
+    - python manage.py startapp 'name_new_app'
+    - python manage.py migrate
+    - python manage.py runserver 0.0.0.0:8888

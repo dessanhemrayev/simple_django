@@ -25,4 +25,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        cd simple_django_project
         python manage.py test

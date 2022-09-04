@@ -8,7 +8,7 @@ class Hotel(models.Model):
     count_rooms = models.IntegerField(name = "Количество комнат")
     pizza = models.ManyToManyField(Pizza)
     vine = models.ManyToManyField(Vine)
-    
+    picture = models.ImageField(upload_to ='uploads/',null=True)
         
 class Place(models.Model):
     name = models.CharField(max_length=256)
